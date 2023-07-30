@@ -1113,37 +1113,37 @@ const COCO_LABELS = [
 
 const TFLITE_MODELS = {
   'mobilenet_cpu': {
-    'url': '/models/mobilenet_v1_1.0_224_quant.tflite',
+    'url': './models/mobilenet_v1_1.0_224_quant.tflite',
     'type': 'classification',
     'device': 'cpu',
     'labels': IMAGENET_LABELS,
   },
   'mobilenet_tpu': {
-    'url': '/models/mobilenet_v1_1.0_224_quant_edgetpu.tflite',
+    'url': './models/mobilenet_v1_1.0_224_quant_edgetpu.tflite',
     'type': 'classification',
     'device': 'tpu',
     'labels': IMAGENET_LABELS,
   },
   'ssd_mobilenet_coco_cpu': {
-    'url': '/models/ssd_mobilenet_v2_coco_quant_postprocess.tflite',
+    'url': './models/ssd_mobilenet_v2_coco_quant_postprocess.tflite',
     'type': 'detection',
     'device': 'cpu',
     'labels': COCO_LABELS,
   },
   'ssd_mobilenet_coco_tpu': {
-    'url': '/models/ssd_mobilenet_v2_coco_quant_postprocess_edgetpu.tflite',
+    'url': './models/ssd_mobilenet_v2_coco_quant_postprocess_edgetpu.tflite',
     'type': 'detection',
     'device': 'tpu',
     'labels': COCO_LABELS,
   },
   'ssd_mobilenet_face_cpu': {
-    'url': '/models/ssd_mobilenet_v2_face_quant_postprocess.tflite',
+    'url': './models/ssd_mobilenet_v2_face_quant_postprocess.tflite',
     'type': 'detection',
     'device': 'cpu',
     'labels': ['face'],
   },
   'ssd_mobilenet_face_tpu': {
-    'url': '/models/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite',
+    'url': './models/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite',
     'type': 'detection',
     'device': 'tpu',
     'labels': ['face'],
