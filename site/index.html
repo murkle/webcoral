@@ -113,7 +113,7 @@
       document.addEventListener('DOMContentLoaded', event => {
         let downloadButton = document.querySelector('#button-firmware');
         downloadButton.addEventListener('click', async event => {
-          let firmwareFile = await loadFile('/firmware.bin');
+          let firmwareFile = await loadFile('./firmware.bin');
           let device = await openDevice();
           if (device) {
             console.log('Device: ', device.properties);
